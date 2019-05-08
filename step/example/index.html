@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../style/step.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="steps">
+
+    </div>
+</body>
+</html>
+<script src="../jquery-3.3.1.js"></script>
+<script src="../step.js"></script>
+<script>
+    //时间线
+    var data = [
+        { 'title': "第一步", "desc": "填写工地信息" },
+        { 'title': "第二步", "desc": "填写设备信息" },
+        { 'title': "第三步", "desc": "填写视频信息" },
+        { 'title': "第四步", "desc": "上传工地附件" },
+    ];
+    var step = $("#steps").step({
+        data: data,
+        current: 0
+    });
+</script>
